@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#2C2E2F">
   <meta name="keywords" content="工具箱,星皇的工具箱,在线工具,ToolBox,Toolbox,toolbox,A-I-O,All In One,All-In-One">
   <meta name="description" content="星皇的工具箱提供好用、易用的工具。">
+  <link rel="stylesheet" href="https://stargolx.github.io/afont/css/afont.sg.min.css">
   <link rel="stylesheet" id="font-awesome-css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?ver=5.5.3" type="text/css" media="all">
   <link rel="stylesheet" id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css?ver=5.5.3" type="text/css" media="all">
   <link rel="stylesheet" id="nav-css" href="https://stargolx.github.io/ToolBox/index/css/style.css" type="text/css" media="all">
@@ -30,32 +31,32 @@
           </div>
           <div class="mobile-menu-toggle visible-xs">
             <a href="#" data-toggle="mobile-menu" one-link-mark="yes">
-              <i class="fa fa-bars"></i>
+              <i class="af af-bars"></i>
             </a>
           </div>
         </header>
         <ul id="main-menu" class="main-menu">
           <li>
-            <a href="#常用工具" class="smooth" one-link-mark="yes">
-              <i class="fa fa-star fa-fw"></i>
-              <span class="title">常用工具</span>
+            <a href="#实用工具" class="smooth" one-link-mark="yes">
+              <i class="af af-star af-fw"></i>
+              <span class="title">实用工具</span>
             </a>
           </li>
           <li>
             <a href="#影音专区" class="smooth" one-link-mark="yes">
-              <i class="fa fa-video-camera fa-fw"></i>
+              <i class="af af-video-camera af-fw"></i>
               <span class="title">影音专区</span>
             </a>
           </li>
           <li>
             <a href="#其他工具" class="smooth" one-link-mark="yes">
-              <i class="fa fa-thumbs-up fa-fw"></i>
+              <i class="af af-thumbs-up af-fw"></i>
               <span class="title">其他工具</span>
             </a>
           </li>
           <li>
             <a href="#编程开发" class="smooth" one-link-mark="yes">
-              <i class="fa fa-code fa-fw"></i>
+              <i class="af af-code af-fw"></i>
               <span class="title">编程开发</span>
             </a>
           </li>
@@ -77,7 +78,7 @@
           <ul class="user-info-menu left-links list-inline list-unstyled">
             <li class="hidden-xs">
               <a href="#" data-toggle="sidebar" one-link-mark="yes">
-                <i class="fa fa-bars"></i>
+                <i class="af af-bars"></i>
               </a>
             </li>
           </ul>
@@ -88,75 +89,58 @@
           function g() {
             h(), i(), j(), k()
           }
-
           function h() {
             d.checked = s()
           }
-
           function i() {
             var a = document.querySelector('input[name="type"][value="' + p() + '"]');
             a && (a.checked = !0, l(a))
           }
-
           function j() {
             v(u())
           }
-
           function k() {
             w(t())
           }
-
           function l(a) {
             for (var b = 0; b < e.length; b++) e[b].classList.remove("s-current");
             a.parentNode.parentNode.parentNode.classList.add("s-current")
           }
-
           function m(a, b) {
             window.localStorage.setItem("superSearch" + a, b)
           }
-
           function n(a) {
             return window.localStorage.getItem("superSearch" + a)
           }
-
           function o(a) {
             f = a.target, v(u()), w(a.target.value), m("type", a.target.value), c.focus(), l(a.target)
           }
-
           function p() {
             var b = n("type");
             return b || a[0].value
           }
-
           function q(a) {
             m("newWindow", a.target.checked ? 1 : -1), x(a.target.checked)
           }
-
           function r(a) {
             return a.preventDefault(), "" == c.value ? (c.focus(), !1) : (w(t() + c.value), x(s()), s() ? window.open(b.action, +new Date) : location.href = b.action, void 0)
           }
-
           function s() {
             var a = n("newWindow");
             return a ? 1 == a : !0
           }
-
           function t() {
             return document.querySelector('input[name="type"]:checked').value
           }
-
           function u() {
             return document.querySelector('input[name="type"]:checked').getAttribute("data-placeholder")
           }
-
           function v(a) {
             c.setAttribute("placeholder", a)
           }
-
           function w(a) {
             b.action = a
           }
-
           function x(a) {
             a ? b.target = "_blank" : b.removeAttribute("target")
           }
@@ -172,13 +156,13 @@
       </script>
       <div class="sites-list" style="margin-bottom: 8.5rem;">
         <br><br><br>
-        <h4 class="text-gray" style="display: inline-block;" id="常用工具">常用工具</h4>
+        <h4 class="text-gray" style="display: inline-block;" id="实用工具">实用工具</h4>
         <div class="row">
           <div class="xe-card col-sm-4 col-md-3">
             <a href="https://stargolx.github.io/ToolBox/epub_reader/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/epub_reader/">
               <div class="xe-comment-entry">
                 <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://ae01.alicdn.com/kf/H6d08324d3b254e3582d4f1e2b2807dbdI.jpg" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
+                  <img class="img-circle lazy" src="https://ae01.alicdn.com/kf/H6d08324d3b254e3582d4f1e2b2807dbdI.jpg" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
                 </div>
                 <div class="xe-comment">
                   <div class="xe-user-name overflowClip_1">
@@ -193,13 +177,58 @@
             <a href="https://stargolx.github.io/ToolBox/ip" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/ip">
               <div class="xe-comment-entry">
                 <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/online_tools_icon.png" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/online_tools_icon.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
                 </div>
                 <div class="xe-comment">
                   <div class="xe-user-name overflowClip_1">
                     <strong>IP地址查询</strong>
                   </div>
                   <p class="overflowClip_2">查询本机IP地址，查询指定IP的位置</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="xe-card col-sm-4 col-md-3 ">
+            <a href="https://stargolx.github.io/ToolBox/encode&decode/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/encode&decode/">
+              <div class="xe-comment-entry">
+                <div class="xe-user-img">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/encode&decode.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
+                </div>
+                <div class="xe-comment">
+                  <div class="xe-user-name overflowClip_1">
+                    <strong>加密/解密工具</strong>
+                  </div>
+                  <p class="overflowClip_2">一个实用但是使用率较低的又可以加密和解密的工具</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="xe-card col-sm-4 col-md-3 ">
+            <a href="https://stargolx.github.io/ToolBox/shortcut_mapper/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/shortcut_mapper/
+              <div class="xe-comment-entry">
+                <div class="xe-user-img">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/shortcut.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
+                </div>
+                <div class="xe-comment">
+                  <div class="xe-user-name overflowClip_1">
+                    <strong>快捷键查询</strong>
+                  </div>
+                  <p class="overflowClip_2">一个实用的快捷键查询工具</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="xe-card col-sm-4 col-md-3 ">
+            <a href="https://stargolx.github.io/ToolBox/password_generator/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/password_generator/
+              <div class="xe-comment-entry">
+                <div class="xe-user-img">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/password.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
+                </div>
+                <div class="xe-comment">
+                  <div class="xe-user-name overflowClip_1">
+                    <strong>密码生成器</strong>
+                  </div>
+                  <p class="overflowClip_2">随机生成一串密码（请自行保存）</p>
                 </div>
               </div>
             </a>
@@ -212,7 +241,7 @@
             <a href="https://yun.hei521.cn" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://yun.hei521.cn">
               <div class="xe-comment-entry">
                 <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://ae01.alicdn.com/kf/Hb8137651255b4225b61a37f676224024p.jpg" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
+                  <img class="img-circle lazy" src="https://ae01.alicdn.com/kf/Hb8137651255b4225b61a37f676224024p.jpg" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
                 </div>
                 <div class="xe-comment">
                   <div class="xe-user-name overflowClip_1">
@@ -224,41 +253,10 @@
             </a>
           </div>
           <div class="xe-card col-sm-4 col-md-3 ">
-            <a href="https://stargolx.github.io/ToolBox/music_unlock" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes"
-              data-original-title="https://stargolx.github.io/ToolBox/music_unlock">
-              <div class="xe-comment-entry">
-                <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://ae01.alicdn.com/kf/H0179d860d8344b91b02d728e01a74d04Q.jpg" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
-                </div>
-                <div class="xe-comment">
-                  <div class="xe-user-name overflowClip_1">
-                    <strong>加密音乐文件解锁</strong>
-                  </div>
-                  <p class="overflowClip_2">解锁QQ音乐网易云音乐加密的ncm,mflac,mgg等音频文件</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="xe-card col-sm-4 col-md-3 ">
-            <a href="https://stargolx.github.io/ToolBox/music/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/music/">
-              <div class="xe-comment-entry">
-                <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/online_tools_icon.png" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
-                </div>
-                <div class="xe-comment">
-                  <div class="xe-user-name overflowClip_1">
-                    <strong>MyFreeMP3</strong>
-                  </div>
-                  <p class="overflowClip_2">Free Music Downloads 320Kbps Songs MOBILE</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="xe-card col-sm-4 col-md-3 ">
             <a href="https://stargolx.github.io/ToolBox/m3u8_player" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/m3u8_player">
               <div class="xe-comment-entry">
                 <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/online_tools_icon.png" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/online_tools_icon.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
                 </div>
                 <div class="xe-comment">
                   <div class="xe-user-name overflowClip_1">
@@ -274,10 +272,10 @@
         <h4 class="text-gray" style="display: inline-block;" id="其他工具">其他工具</h4>
         <div class="row">
           <div class="xe-card col-sm-4 col-md-3 ">
-            <a href="https://stargolx.github.io/ToolBox/monitor/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/monitor/">
+            <a href="https://stats.uptimerobot.com/NWgQQiNmoZ/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stats.uptimerobot.com/NWgQQiNmoZ/">
               <div class="xe-comment-entry">
                 <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://monitor.liumingye.cn/assets/favicon.ico" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/monitor/favicon.ico" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
                 </div>
                 <div class="xe-comment">
                   <div class="xe-user-name overflowClip_1">
@@ -292,7 +290,7 @@
             <a href="https://stargolx.github.io/ToolBox/rsshub/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/rsshub/">
               <div class="xe-comment-entry">
                 <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://ae01.alicdn.com/kf/Hc4b9bfe9526546d6bb2db5358b3395e7v.jpg" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
+                  <img class="img-circle lazy" src="https://ae01.alicdn.com/kf/Hc4b9bfe9526546d6bb2db5358b3395e7v.jpg" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
                 </div>
                 <div class="xe-comment">
                   <div class="xe-user-name overflowClip_1">
@@ -307,7 +305,7 @@
             <a href="https://stargolx.github.io/ToolBox/encode&decode/md5" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/encode&decode/md5">
               <div class="xe-comment-entry">
                 <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/online_tools_icon.png" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/online_tools_icon.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
                 </div>
                 <div class="xe-comment">
                   <div class="xe-user-name overflowClip_1">
@@ -323,13 +321,28 @@
               data-original-title="https://stargolx.github.io/ToolBox/to_pinyin/">
               <div class="xe-comment-entry">
                 <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/online_tools_icon.png" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/online_tools_icon.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
                 </div>
                 <div class="xe-comment">
                   <div class="xe-user-name overflowClip_1">
                     <strong>中文转拼音</strong>
                   </div>
                   <p class="overflowClip_2">汉字拼音在线转换工具，可对拼音标注声调，并能识别多音字</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="xe-card col-sm-4 col-md-3 ">
+            <a href="https://stargolx.github.io/ToolBox/periodic_table/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/periodic_table/
+              <div class="xe-comment-entry">
+                <div class="xe-user-img">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/periodic_table_of_elements.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
+                </div>
+                <div class="xe-comment">
+                  <div class="xe-user-name overflowClip_1">
+                    <strong>元素周期表查询</strong>
+                  </div>
+                  <p class="overflowClip_2">一个元素周期表查询工具</p>
                 </div>
               </div>
             </a>
@@ -342,13 +355,43 @@
             <a href="https://devhints.io" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://devhints.io">
               <div class="xe-comment-entry">
                 <div class="xe-user-img">
-                  <img class="img-circle lazy" src="https://devhints.io/assets/favicon.png" onerror="javascript:this.src='http://tool.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'" width="40">
+                  <img class="img-circle lazy" src="https://devhints.io/assets/favicon.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
                 </div>
                 <div class="xe-comment">
                   <div class="xe-user-name overflowClip_1">
                     <strong>开发者速查表</strong>
                   </div>
                   <p class="overflowClip_2">为开发者准备的速查表</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="xe-card col-sm-4 col-md-3 ">
+            <a href="https://stargolx.github.io/ToolBox/css_tool/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/css_tool/
+              <div class="xe-comment-entry">
+                <div class="xe-user-img">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/css.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
+                </div>
+                <div class="xe-comment">
+                  <div class="xe-user-name overflowClip_1">
+                    <strong>CSS工具</strong>
+                  </div>
+                  <p class="overflowClip_2">一个实用但是又不太实用的CSS工具</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="xe-card col-sm-4 col-md-3 ">
+            <a href="https://stargolx.github.io/ToolBox/color_picker/" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" title="" one-link-mark="yes" data-original-title="https://stargolx.github.io/ToolBox/color_picker/">
+              <div class="xe-comment-entry">
+                <div class="xe-user-img">
+                  <img class="img-circle lazy" src="https://stargolx.github.io/Resources/img/icon/color_picker.png" onerror="javascript:this.src='https://stargolx.github.io/Resources/img/icon/online_tools_icon.png'" width="40">
+                </div>
+                <div class="xe-comment">
+                  <div class="xe-user-name overflowClip_1">
+                    <strong>颜色提取工具</strong>
+                  </div>
+                  <p class="overflowClip_2">一个实用的颜色提取工具</p>
                 </div>
               </div>
             </a>
